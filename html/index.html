@@ -5,7 +5,7 @@
     <title>南京东屋电气有限公司官方网站</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script src="js/lib/jquery-1.8.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 </head>
 <body>
     <!-- 头部 -->
@@ -13,6 +13,10 @@
         <div class="top-welcome o-h">
             <div class="t-l f-l">欢迎登录南京东屋电气有限公司官方网站！</div>
             <div class="item-r f-r">
+                <a class="active" href="javascript:void(0)">中文</a>
+                <span class="line"></span>
+                <a href="javascript:void(0)">English</a>
+                <span class="line"></span>
                 <a href="javascript:void(0)">返回首页</a>
                 <span class="line"></span>
                 <a href="javascript:void(0)">联系我们</a>
@@ -30,19 +34,19 @@
                 <!-- 导航 -->
                 <ul class="header-nav">
                     <li>
-                        <a href="javascript:void(0)">首页</a>
+                        <a class="active" href="index.html">首页</a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">公司介绍</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">产品中心</a>
+                        <a href="prolist.html">产品中心</a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">服务流程</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">我的订单</a>
+                        <a href="newslist.html">新闻中心</a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">技术服务</a>
@@ -52,23 +56,29 @@
         </div>
     </div>
 
-    <!-- slider 幻灯片 -->
-    <div class="slider-wrap">
-        <img src="images/slider1.jpg" width="100%" />
-    </div>
+    <!-- slider -->
+    <div class="wow zoomIn slider" id="slider">
+        <ul class="slide-list" id="slideList">
+            <li><a href="javascript:void(0);"><img src="images/slider1.jpg" width="100%" /></a></li>
+            <li><a href="javascript:void(0);"><img src="images/banner2.jpg" width="100%" /></a></li>
+        </ul>
+        <div class="slide-control" id="slideControl">
+          
+        </div>
+    </div><!-- slider/ -->
 
     <!-- banner -->
-    <a class="pro-intro-wrap" style="line-height:0" href="javascript" title="静脉锁单机版;开门信息,胁迫密码,指纹开门,物联生活,实时送达,隐蔽报警,方便快捷,安全升级">
+    <a class="wow zoomIn pro-intro-wrap" style="line-height:0" href="javascript:void(0)" title="静脉锁单机版;开门信息,胁迫密码,指纹开门,物联生活,实时送达,隐蔽报警,方便快捷,安全升级">
         <img src="images/banner2.jpg" width="100%" />
     </a>
 
     <!-- 介绍_密码带屏款 -->
     <div class="pro-intro-wrap">
-        <h2>密码带屏款</h2>
+        <h2 style="width:100%;margin-bottom: 25px;">密码带屏款</h2>
         <h5>ProLogic 系列密码箱柜控制器是基于“易用第一”原则而设计的新一代高端密码控制器，全系列均带有128 x 64高
 清晰OLED显示屏，具有完善的人性化操作导向提示、操作帮助，以及错误操作纠正提示和故障维护指引信息，大大方便
 了用户对产品的使用和维护，可做到基本无需学习及依赖说明书即可完成大多数功能的操作使用</h5>
-        <ul>
+        <ul class="wow zoomIn">
             <li>
                 <div class="i">
                     <img src="images/p1.png" />
@@ -91,7 +101,7 @@
     </div>
 
     <!-- 介绍_密码带屏机电一体锁 -->
-    <div class="intro-wrap grey">
+    <div class="wow zoomIn intro-wrap grey">
         <div class="inner o-h">
             <div class="l-txt f-l">
                 <h2 class="t-ch">密码带屏机电一体锁</h2>
@@ -107,10 +117,10 @@
     </div>
 
     <!-- 介绍_亮铬-十四键指纹款 -->
-    <div class="intro-wrap white">
+    <div class="wow zoomIn intro-wrap white">
         <div class="inner o-h">
             <div class="l-txt f-l" style="margin:0">
-                <img src="images/p5.png" />
+                <img style="margin: 30px 0;" src="images/p5.png" />
             </div>
             <div class="r-img f-r">
                 <h2 class="t-ch">亮铬-十四键指纹款</h2>
@@ -170,4 +180,27 @@
         </div>
     </div>
 </body>
+<script src="js/lib/wow.min.js"></script>
+<script src="js/lib/jquery-1.8.1.js"></script>
+<script src="js/lib/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+    $(function () {
+        new WOW().init();
+
+        $('ul#slideList').cycle({
+            fx: 'fade',
+            timeout: 4000, // 幻灯片过渡间隔，单位是毫秒 (若值为0则不自动切换)
+            pause: 1 , // 过渡的速度
+            pager: '#slideControl',// 按钮容器元素
+            pagerEvent: 'click', // 按钮驱动页面导航的事件
+            cleartype: !$.support.opacity, // 若为true，则应用clearType修正 (专为IE提供)是否支持半透明效果
+            activePagerClass: 'active', // 当按钮链接被激活时的css类名
+            pagerAnchorBuilder: function(idx, slide) {  // 用于建立按钮超链接的回调函数:// function(index, DOMelement)
+                idx += 1;
+                return '<a href="javascript:void(0)" class="num'+idx+'">'　+ idx + '</a>';
+            }
+        });
+
+    }); 
+</script>
 </html>

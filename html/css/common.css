@@ -91,3 +91,10 @@ i{
 .f-r {
   float: right;
 }
+/* display */
+.d-b{
+  display: block;
+}
+.d-n{
+  display: none;
+}

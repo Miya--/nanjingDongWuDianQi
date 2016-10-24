@@ -1,2 +1,6 @@
 http://jsduofang.com/
 http://detielab.com/
+
+PC：首页，产品列表，新闻列表
+
+Mobile:首页，产品列表，新闻列表，新闻详情框架页，产品详情，

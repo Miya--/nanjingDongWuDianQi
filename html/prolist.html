@@ -5,7 +5,7 @@
     <title>南京东屋电气有限公司官方网站</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script src="js/lib/jquery-1.8.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 </head>
 <body>
     <!-- 头部 -->
@@ -13,6 +13,10 @@
         <div class="top-welcome o-h">
             <div class="t-l f-l">欢迎登录南京东屋电气有限公司官方网站！</div>
             <div class="item-r f-r">
+                <a class="active" href="javascript:void(0)">中文</a>
+                <span class="line"></span>
+                <a href="javascript:void(0)">English</a>
+                <span class="line"></span>
                 <a href="javascript:void(0)">返回首页</a>
                 <span class="line"></span>
                 <a href="javascript:void(0)">联系我们</a>
@@ -30,19 +34,19 @@
                 <!-- 导航 -->
                 <ul class="header-nav">
                     <li>
-                        <a href="javascript:void(0)">首页</a>
+                        <a href="index.html">首页</a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">公司介绍</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">产品中心</a>
+                        <a class="active" href="prolist.html">产品中心</a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">服务流程</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">我的订单</a>
+                        <a href="newslist.html">新闻中心</a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">技术服务</a>
@@ -52,7 +56,87 @@
         </div>
     </div>
 
-    
+    <div class="banner-img">
+        <img src="images/banner7.jpg" width="100%" />
+    </div>
+
+    <!-- 产品列表 -->
+    <div class="center-wrap o-h">
+        <div class="l-m f-l">
+            <div class="l-m-wrap">
+                <div class="m-tit">
+                    产品中心
+                </div>
+                <div class="m-cont">
+                    <a class="pro-type" href="javascript:void(0)">智能家用指纹锁</a>
+                    <a class="pro-type" href="javascript:void(0)">智能家用指纹锁</a>
+                    <a class="pro-type" href="javascript:void(0)">智能家用指纹锁</a>
+                    <a class="pro-type" href="javascript:void(0)">智能家用指纹锁</a>
+                    <a class="pro-type" href="javascript:void(0)">智能家用指纹锁</a>
+                    <a class="pro-type" href="javascript:void(0)">智能家用指纹锁</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="r-m f-r" style="margin-right:-30px;">
+            <div class="r-m-cont">当前位置：首页 > 产品中心</div>
+            <div class="pro-wrap o-h">
+                <a class="wow fadeInUp pro-list" href="javascript:void(0)">
+                    <img src="images/p1.png" />
+                    <span>密码带屏款</span>
+                </a>
+                <a class="wow fadeInUp pro-list" href="javascript:void(0)">
+                    <img src="images/p1.png" />
+                    <span>密码带屏款</span>
+                </a>
+                <a class="wow fadeInUp pro-list" href="javascript:void(0)">
+                    <img src="images/p1.png" />
+                    <span>密码带屏款</span>
+                </a>
+                <a class="wow fadeInUp pro-list" href="javascript:void(0)">
+                    <img src="images/p1.png" />
+                    <span>密码带屏款</span>
+                </a>
+                <a class="wow fadeInUp pro-list" href="javascript:void(0)">
+                    <img src="images/p1.png" />
+                    <span>密码带屏款</span>
+                </a>
+                <a class="wow fadeInUp pro-list" href="javascript:void(0)">
+                    <img src="images/p1.png" />
+                    <span>密码带屏款</span>
+                </a>
+                <a class="wow fadeInUp pro-list" href="javascript:void(0)">
+                    <img src="images/p1.png" />
+                    <span>密码带屏款</span>
+                </a>
+                <a class="wow fadeInUp pro-list" href="javascript:void(0)">
+                    <img src="images/p1.png" />
+                    <span>密码带屏款</span>
+                </a>
+                <a class="wow fadeInUp pro-list" href="javascript:void(0)">
+                    <img src="images/p1.png" />
+                    <span>密码带屏款</span>
+                </a>
+            </div>
+            <!--分页-->
+            <div class="page-nav">
+                <a href="javascript:;" title="上一页" class="prev-page">上一页</a>
+                <a href="javascript:;" title="1">1</a>
+                <span>...</span>
+                <a href="javascript:;" title="4">4</a>
+                <a href="javascript:;" title="5">5</a>
+                <a href="javascript:;" title="6">6</a>
+                <a href="javascript:;" title="7" class="active">7</a>
+                <a href="javascript:;" title="8">8</a>
+                <a href="javascript:;" title="9">9</a>
+                <a href="javascript:;" title="10">10</a>
+                <span>...</span>
+                <a href="javascript:;" title="99">99</a>
+                <a href="javascript:;" title="100">100</a>
+                <a href="javascript:;" title="下一页" class="next-page"></a>
+            </div><!--分页/-->
+        </div>
+    </div>
 
     <!-- footer -->
     <div class="footer">
@@ -102,4 +186,10 @@
         </div>
     </div>
 </body>
+<script src="js/lib/wow.min.js"></script>
+<script src="js/lib/jquery-1.8.1.js"></script>
+<script src="js/lib/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+   new WOW().init();
+</script
 </html>
