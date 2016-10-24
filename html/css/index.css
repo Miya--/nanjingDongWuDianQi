@@ -1,0 +1,238 @@
+.header {
+  width: 100%;
+  background: #f7f7f7;
+}
+.header .top-welcome {
+  width: 1000px;
+  height: 24px;
+  margin: 0 auto;
+  color: #595959;
+  font-size: 12px;
+  line-height: 24px;
+}
+.header .top-welcome .item-r {
+  overflow: hidden;
+}
+.header .top-welcome .item-r a {
+  color: #595959;
+  line-height: 24px;
+  display: block;
+  float: left;
+}
+.header .top-welcome .item-r span.line {
+  display: block;
+  float: left;
+  width: 1px;
+  height: 13px;
+  margin: 6px 5px;
+  background: #595959;
+}
+.header .top-welcome .item-r span.tel i {
+  color: #2e2e2e;
+}
+.header .top-nav {
+  background: #2e2e2e;
+  height: 60px;
+  width: 100%;
+}
+.header .top-nav .inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+.header .top-nav .inner a.logo {
+  display: block;
+  margin-top: 16px;
+  margin-right: 30px;
+}
+.header .top-nav .inner ul.header-nav {
+  overflow: hidden;
+}
+.header .top-nav .inner ul.header-nav li {
+  float: left;
+  margin-left: 71px;
+}
+.header .top-nav .inner ul.header-nav li a {
+  color: #d4d3d8;
+  font-size: 16px;
+  line-height: 60px;
+  height: 60px;
+  display: block;
+}
+.header .top-nav .inner ul.header-nav li a:hover {
+  color: #e4be63;
+}
+.pro-intro-wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+.pro-intro-wrap h2 {
+  color: #000;
+  font-size: 45px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: normal;
+  font-family: fzjt;
+  width: 85%;
+  margin-top: 50px;
+}
+.pro-intro-wrap h5 {
+  color: #161616;
+  font-size: 23px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: normal;
+  font-family: fzjt;
+}
+.pro-intro-wrap ul {
+  overflow: hidden;
+  margin-top: 50px;
+}
+.pro-intro-wrap ul li {
+  float: left;
+  width: 33.3%;
+}
+.pro-intro-wrap ul li .i img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+.pro-intro-wrap ul li .t {
+  text-align: center;
+  margin: 20px 0;
+  font-family: fzjt;
+  font-size: 20px;
+}
+.intro-wrap .inner {
+  width: 70%;
+  margin: 0 auto;
+}
+.intro-wrap .inner .l-txt {
+  width: 60%;
+  margin: 80px 0;
+}
+.intro-wrap .inner .l-txt h2 {
+  color: #18171c;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: left;
+  font-weight: normal;
+  font-family: fzjt;
+}
+.intro-wrap .inner .l-txt h2.t-en {
+  margin-bottom: 15px;
+}
+.intro-wrap .inner .l-txt .desc {
+  color: #575757;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+  font-weight: bold;
+  font-family: fzjt;
+}
+.intro-wrap .inner .l-txt .p-price {
+  color: #18171c;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: left;
+  font-weight: normal;
+  font-family: fzjt;
+  margin-top: 40px;
+}
+.intro-wrap .inner .l-txt .p-price i {
+  font-size: 35px;
+}
+.intro-wrap .inner .l-txt img {
+  display: block;
+  height: 300px;
+  margin: 30px auto;
+}
+.intro-wrap .inner .r-img {
+  width: 40%;
+}
+.intro-wrap .inner .r-img img {
+  display: block;
+  height: 300px;
+  margin: 30px auto;
+}
+.intro-wrap .inner .r-img h2 {
+  color: #18171c;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: left;
+  font-weight: normal;
+  font-family: fzjt;
+}
+.intro-wrap .inner .r-img h2.t-en {
+  margin-bottom: 15px;
+}
+.intro-wrap .inner .r-img .desc {
+  color: #575757;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+  font-weight: bold;
+  font-family: fzjt;
+}
+.intro-wrap .inner .r-img .p-price {
+  color: #18171c;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: left;
+  font-weight: normal;
+  font-family: fzjt;
+  margin-top: 40px;
+}
+.intro-wrap .inner .r-img .p-price i {
+  font-size: 35px;
+}
+.intro-wrap.grey {
+  background: #f7f7f7;
+}
+.intro-wrap.white .r-img {
+  margin-top: 50px;
+}
+.footer {
+  background: #1e1e1e;
+  padding: 60px 0;
+}
+.footer .inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+.footer .inner ul.footer-nav > li {
+  float: left;
+  border-right: 1px solid #333;
+  height: 190px;
+}
+.footer .inner ul.footer-nav > li .tit {
+  color: #fff;
+  font-size: 18px;
+  margin: 10px 50px;
+}
+.footer .inner ul.footer-nav > li ul li a {
+  display: block;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  line-height: 30px;
+}
+.footer .inner ul.footer-nav > li ul li a:hover {
+  color: #e4be63;
+}
+.footer .inner .footer-tel .tit {
+  color: #fff;
+  margin: 10px 50px;
+  font-size: 18px;
+}
+.footer .inner .footer-tel span.phone-num {
+  color: #fff;
+  font-size: 25px;
+  display: block;
+  margin-left: 50px;
+}
+.footer .inner .footer-tel p {
+  color: #666;
+  font-size: 16px;
+  line-height: 30px;
+  margin-left: 50px;
+}
