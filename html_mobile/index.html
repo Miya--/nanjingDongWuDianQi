@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<meta http-equiv="pragram" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache, must-revalidate" />
+<meta http-equiv="expires" content="0" />
+<title>南京东屋电气有限公司官方网站</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="header o-h">
+		<span class="logo">
+			<img src="images/logo.jpg">
+		</span>
+
+		<div class="header-bar">
+			<span id="search" class="search"></span>
+
+			<span id="menu" class="menu"></span>
+		</div>
+	</div>
+
+	<div class="center-wrap">
+		<!-- slider -->
+		<div id="iSlider-wrapper" class="slider-wrap"></div>
+
+		<div class="pro-intro-wrap intro1">
+			<h5 class="slogan">十四键指纹款ScanLogic D Series</h5>
+			<img class="pro-center" src="images/p5.png" />
+		</div>
+
+		<div class="pro-intro-wrap intro2">
+			<h5 class="slogan">动态密码电子锁具控制器系列 </h5>
+			<h5 class="slogan">proLogic Series</h5>
+			<img class="pro-multi" src="images/p9.png" />
+		</div>
+
+		<div class="pro-intro-wrap intro3">
+			<h5 class="slogan">密码顶灯款 SafeLogic TopLit</h5>
+			<div class="pro-i-list">
+				<img class="pro-i-img" src="images/p6.png" />
+				<img class="pro-i-img" src="images/p7.png" />
+				<img class="pro-i-img" src="images/p8.png" />
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="footer">
+		<ul>
+			<li>
+				<span class="t-l">选购及了解</span>
+				<span class="add-r"></span>
+			</li>
+			<li>
+				<span class="t-l">选购及了解</span>
+				<span class="add-r"></span>
+			</li>
+			<li>
+				<span class="t-l">技术与指导</span>
+				<span class="add-r"></span>
+			</li>
+			<li>
+				<span class="t-l">关于公司</span>
+				<span class="add-r"></span>
+			</li>
+			<li>
+				<span class="t-l">快速链接</span>
+				<span class="add-r"></span>
+			</li>
+		</ul>
+
+		<div class="f-qrcode">
+			<p class="tit">关注我们</p>
+			<img src="images/qrcode.jpg" />
+		</div>
+
+		<div class="bottom-bar">
+			<a href="javascript:void(0)">法律声明</a>
+			|
+			<a href="javascript:void(0)">隐私保护</a>
+			|
+			<a href="javascript:void(0)">联系我们</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/lib/jquery-1.8.1.js"></script>
+<script type="text/javascript" src="js/lib/iSlider.min.js"></script>
+<script type="text/javascript" src="js/lib/iSlider.plugin.dot.min.js"></script>
+<script type="text/javascript">
+	// slider
+	var sliderList = [{
+		content : 'images/b1.jpg'
+	},
+	{
+		content : 'images/b2.jpg'
+	},
+	{
+		content : 'images/b3.jpg'
+	}];
+
+	var S = new iSlider({
+        dom: document.getElementById('iSlider-wrapper'),
+        data: sliderList,
+        isLooping: 1,
+        isOverspread: 1,
+        animateTime: 800, // ms
+        plugins: [['dot', {locate :'relative'}]]
+    });
+</script>
+</html>
