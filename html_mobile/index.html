@@ -13,9 +13,10 @@
 <title>南京东屋电气有限公司官方网站</title>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 </head>
 <body>
-	<div class="header o-h">
+	<div class="header">
 		<span class="logo">
 			<img src="images/logo.jpg">
 		</span>
@@ -24,30 +25,47 @@
 			<span id="search" class="search"></span>
 
 			<span id="menu" class="menu"></span>
+
+			<!-- 菜单 -->
+			<div class="menu-nav d-n" id="menuNav">
+				<div class="arrow-up"></div>
+				<ul>
+					<li><a style="border-bottom:1px solid #fff" href="javascript:void(0)">产品中心</a></li>
+					<li><a href="javascript:void(0)">新闻中心</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
 	<div class="center-wrap">
+		<!-- 搜索框 -->
+		<div class="search-wrap d-n" id="searchWrap">
+			<span class="l">
+				<input type="text" class="search-input" placeholder="搜索" />
+			</span>
+			<a href="javascript:void(0)" class="btn-search">搜索</a>
+		</div>
+
 		<!-- slider -->
-		<div id="iSlider-wrapper" class="slider-wrap"></div>
+		<div id="iSlider-wrapper" class="wow rollIn slider-wrap"></div>
 
 		<div class="pro-intro-wrap intro1">
 			<h5 class="slogan">十四键指纹款ScanLogic D Series</h5>
-			<img class="pro-center" src="images/p5.png" />
+			<img class="wow bounceInUp pro-center" src="images/p5.png" />
 		</div>
 
 		<div class="pro-intro-wrap intro2">
 			<h5 class="slogan">动态密码电子锁具控制器系列 </h5>
 			<h5 class="slogan">proLogic Series</h5>
-			<img class="pro-multi" src="images/p9.png" />
+			<img class="wow bounceInUp pro-multi" src="images/p9.png" />
 		</div>
 
 		<div class="pro-intro-wrap intro3">
 			<h5 class="slogan">密码顶灯款 SafeLogic TopLit</h5>
 			<div class="pro-i-list">
-				<img class="pro-i-img" src="images/p6.png" />
-				<img class="pro-i-img" src="images/p7.png" />
-				<img class="pro-i-img" src="images/p8.png" />
+				<img class="wow zoomIn pro-i-img" src="images/p6.png" />
+				<img class="wow zoomIn pro-i-img" src="images/p7.png" />
+				<img class="wow zoomIn pro-i-img" src="images/p8.png" />
 			</div>
 			
 		</div>
@@ -91,6 +109,7 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="js/lib/wow.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery-1.8.1.js"></script>
 <script type="text/javascript" src="js/lib/iSlider.min.js"></script>
 <script type="text/javascript" src="js/lib/iSlider.plugin.dot.min.js"></script>
@@ -110,9 +129,31 @@
         dom: document.getElementById('iSlider-wrapper'),
         data: sliderList,
         isLooping: 1,
+        isAutoplay: true,
         isOverspread: 1,
         animateTime: 800, // ms
         plugins: [['dot', {locate :'relative'}]]
+    });
+
+    // 动画展示
+    new WOW().init();
+
+    $(function () {
+    	$('#search').click(function () {
+    		$('#searchWrap').slideToggle('fast');
+    	});
+
+    	$('#menu').click(function () {
+    		var self = $(this);
+    		if ($('#menuNav').is(':visible')) {
+    			$('#menuNav').slideUp();
+    			self.attr('class', 'menu');
+    		} else {
+    			$('#menuNav').slideDown();
+    			self.attr('class', 'menu-active');
+    		}
+    		
+    	});
     });
 </script>
 </html>

@@ -7,6 +7,8 @@ body{overflow-x:hidden; background: #fff;}
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99;
+    border-bottom: 1px solid #dcd9d9;
 }
 
 span.logo{
@@ -27,8 +29,8 @@ span.logo img{
 
 .header-bar{
     float: right;
-    overflow: hidden;
     margin-right: 15px;
+    position: relative;
 }
 span.search{
     display: block;
@@ -44,17 +46,28 @@ span.menu{
     float: left;
     width: 24px;
     height: 22px;
+    background: url(../images/i22.png) no-repeat;
+    background-size: 20px 18px;
+    margin-top: 21px;
+    margin-left: 15px;
+}
+span.menu-active{
+    display: block;
+    float: left;
+    width: 24px;
+    height: 22px;
     background: url(../images/i2.png) no-repeat;
-    background-size: 24px 22px;
-    margin-top: 20px;
+    background-size: 20px 18px;
+    margin-top: 21px;
     margin-left: 15px;
 }
 
 /* islider */
 .slider-wrap{
     width: 100%;
-    height: 500px;
+    height: 400px;
     position: relative;
+    z-index: 1;
 }
 .islider-outer {
     display: block;
@@ -148,7 +161,7 @@ span.menu{
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 10000;
+    z-index: 2;
     text-align: center;
 }
 .islider-dot {
@@ -258,4 +271,73 @@ img.pro-i-img{
     font-family: "pf";
     line-height: 30px;
     color: #a3a3a3;
+}
+
+.search-wrap{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: fixed;
+    z-index: 50;
+    background: #fff;
+    padding: 10px 10%;
+}
+.search-wrap .l{
+    display: block;
+    float: left;
+    width: 80%;
+    height: 35px;
+    border: 1px solid #ab1600;
+    border-right: 0;
+}
+
+a.btn-search{
+    display: block;
+    float: left;
+    width: 19%;
+    height: 37px;
+    background: #ab1600;
+    color: #fff;
+    line-height: 37px;
+    text-align: center;
+}
+input.search-input {
+    height: 25px;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    border: 0;
+    font-family: "pf";
+    font-size: 14px;
+    outline: none;
+}
+
+.menu-nav{
+    position: absolute;
+    top: 55px;
+    right: -15%;
+    width: 91px;
+}
+.menu-nav ul {
+    clear: both;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.menu-nav ul li a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(213,22,32,1);
+}
+.arrow-up{
+    width:0;
+    height:0;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom: 5px solid rgb(213,22,32);
+    float: right;
+    margin-right: 20%;
 }
